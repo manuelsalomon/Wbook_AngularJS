@@ -1,4 +1,4 @@
-angular.module('myApp', ['headerMenu','filterSearch','book'])
+angular.module('myApp', ['headerMenu','filterSearch','bookList'])
 .controller('BookCtrl', function($scope) {
   this.filter = {};
   this.books = [

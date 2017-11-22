@@ -20,9 +20,7 @@
     <header-menu></header-menu>
     <div class="content" ng-controller="BookCtrl as $ctrl">
       <filter-search on-change="$ctrl.handleFilterChanged(filter)" on-submit="$ctrl.filtersBooks()"></filter-search>
-      <div class="book__list">
-        <book data="book" ng-repeat="book in $ctrl.booksCopy"></book>
-      </div>
+      <book-list books="$ctrl.booksCopy"></book-list>
     </div>
   </div>
 
@@ -31,6 +29,6 @@
   <script src="app.js"></script>
   <script src="components/header/header.js"></script>
   <script src="components/filterSearch/filterSearch.js"></script>
-  <script src="components/book/book.js"></script>
+  <script src="components/bookList/bookList.js"></script>
 </body>
 </html>
