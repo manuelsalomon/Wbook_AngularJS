@@ -18,17 +18,21 @@
 
   <div class="main">
     <header-menu></header-menu>
-    <div class="content" ng-controller="BookCtrl as $ctrl">
-      <filter-search on-change="$ctrl.handleFilterChanged(filter)" on-submit="$ctrl.filtersBooks()"></filter-search>
-      <book-list books="$ctrl.booksCopy"></book-list>
-    </div>
+    <ui-view></ui-view>
   </div>
 
   <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="app.js"></script>
-  <script src="components/header/header.js"></script>
+  <script src="views/main/main.js"></script>
+  <script src="views/bookDetail/bookDetail.js"></script>
   <script src="components/filterSearch/filterSearch.js"></script>
+  <script src="components/header/header.js"></script>
   <script src="components/bookList/bookList.js"></script>
+  <script src="components/book/book.js"></script>
+  <script src="components/bookRecomendations/bookRecomendations.js"></script>
+  <script src="components/bookComments/bookComments.js"></script>
+  <script src="services/bookService.js"></script>
+  <script src="app.router.js"></script>
 </body>
 </html>
