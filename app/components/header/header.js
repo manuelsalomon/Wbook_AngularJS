@@ -1,4 +1,4 @@
-angular.module('headerMenu' ,[])
+  angular.module('headerMenu' ,[])
 .component('headerMenu', {
   template:
     `<div class="header">

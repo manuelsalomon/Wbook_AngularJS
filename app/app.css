@@ -23,8 +23,8 @@
 }
 
 .sectionHeader{
-  font-size:20px;
-  color:#a5cd39;
+  font-size: 20px;
+  color: #a5cd39;
 }
 
 .content{
@@ -132,14 +132,14 @@
   height: 100%;
 }
 
-.bookDetail__content{
+.bookDetail__description{
   height: 272px;
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  justify-content: space-between;
 }
 
-.bookDetail__content p {
+.bookDetail__attr{
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -172,6 +172,11 @@
 
 .bookComments__new__field , .bookComment__message{
   margin-left: 15px;
+}
+
+.bookComment__message p{
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .bookComments__new__field{

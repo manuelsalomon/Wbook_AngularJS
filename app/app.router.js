@@ -1,5 +1,4 @@
 var myApp = angular.module('myApp');
-myApp.run($trace => $trace.enable());
 
 myApp.config(($stateProvider) => {
   let states =[

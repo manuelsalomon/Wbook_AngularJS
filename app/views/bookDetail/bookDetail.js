@@ -7,8 +7,8 @@ class DetailController {
 
 DetailController.$inject = ['$stateParams','BookService']
 
-angular.module('bookDetail',[])
-.component('bookDetail',{
+angular.module('bookDetail', [])
+.component('bookDetail', {
   controller: DetailController,
   controllerAs: '$ctrl',
   template:

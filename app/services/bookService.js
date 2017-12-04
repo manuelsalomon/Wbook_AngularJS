@@ -90,7 +90,8 @@ class BookService {
   }
 
   getBook(id) {
-    return this.books[id];
+    let index = this.books.findIndex(x => x.id== id);
+    return this.books[index];
   }
 
   filterBooks(field, value) {
