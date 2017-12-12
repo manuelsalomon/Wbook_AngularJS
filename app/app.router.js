@@ -1,6 +1,4 @@
-var myApp = angular.module('myApp');
-
-myApp.config(($stateProvider,$urlRouterProvider) => {
+var myApp = angular.module('myApp').config(($stateProvider,$urlRouterProvider) => {
   $urlRouterProvider.otherwise("/")
 
   let states =[

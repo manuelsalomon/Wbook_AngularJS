@@ -1,7 +1,8 @@
 class BookService {
-  constructor($http,$localStorage) {
+  constructor($http,$localStorage,$state) {
     this.$http = $http;
     this.$localStorage = $localStorage;
+    this.$state = $state;
     this.books = [];
   }
 
